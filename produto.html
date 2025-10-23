@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página do Produto</title>
+  <link rel="stylesheet" href="assets/produto.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script defer src="assets/produto.js"></script>
+</head>
+<body>
+
+
+      <header class="navbar" id="inicio">
+    <div class="topo-preto">
+      <div class="logo">
+        <img src="imagens/ssaraiva.png" alt="Logo" />
+        <span><strong>Editora</strong><br />Arame Farpado</span>
+      </div>
+      <div class="login-area">
+        <i class="fas fa-user"></i>
+        <div class="login-texto">
+            <span class="usuario">Arame farpado 💀</span><br>
+            <a href="#">Entre</a> ou <a href="#"><strong>cadastre-se</strong></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-vermelho">
+  <button class="hamburguer" id="btnMenu">
+  <i class="fas fa-bars"></i>
+</button>
+
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="#">Loja</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Antologias</a></li>
+          <li><a href="#">Manifesto incógnito</a></li>
+          <li><a href="#">Serviços</a></li>
+        </ul>
+      </nav>
+      <div class="busca">
+        <input type="text" placeholder="Buscar..." />
+        <i class="fas fa-search lupa"></i>
+      </div>
+    </div>
+  </header>
+
+<section class="pagina-produto">
+
+  <!-- GALERIA DE IMAGENS -->
+  <div class="galeria-produto">
+    <div class="imagem-principal">
+      <button class="seta esquerda" onclick="mudarImagem(-1)">&#10094;</button>
+      <img id="imagem-destaque" src="imagens/l1.webp" alt="Produto Principal">
+      <button class="seta direita" onclick="mudarImagem(1)">&#10095;</button>
+    </div>
+    <div class="miniaturas">
+      <img src="imagens/l2.webp" onclick="trocarImagem(this.src)" alt="Miniatura 1">
+      <img src="imagens/l3.webp" onclick="trocarImagem(this.src)" alt="Miniatura 2">
+      <img src="imagens/l1.webp" onclick="trocarImagem(this.src)" alt="Miniatura 3">
+    </div>
+  </div>
+
+  <!-- INFORMAÇÕES DO PRODUTO -->
+  <div class="info-produto">
+    <nav class="caminho">
+      <a href="index.html">Home</a> > <a href="#">Livros</a> > <a href="#">Fantasia</a> > Produto
+    </nav>
+    <h1>Gnomos + Brindes Exclusivos</h1>
+    <p class="subtitulo">Edição mágica com 3 cards e 2 marcadores exclusivos</p>
+    <p class="autor">Autor: <strong>Wil Huygen</strong></p>
+    <div class="avaliacoes">
+      <span class="estrelas">⭐⭐⭐⭐⭐</span> <span>(173)</span>
+      <a href="#">Clique e veja!</a>
+    </div>
+    <p class="preco">
+      <span class="preco-antigo">De R$ 124,90</span><br>
+      <span class="preco-atual">R$ 74,94</span>
+    </p>
+    <p class="parcelamento">ou 4x de R$ 18,74 sem juros no PIX</p>
+    <button class="comprar"><i class="fas fa-shopping-cart"></i> COMPRAR</button>
+
+    <div class="detalhes">
+      <h3>+ Informações</h3>
+      <ul>
+        <li>Marca: Magicae</li>
+        <li>Ano de publicação: 2023</li>
+        <li>ISBN: 9786555982954</li>
+        <li>Traduzido por: Débora Isidoro</li>
+      </ul>
+    </div>
+  </div>
+
+</section>
+
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Luz da Leitura - Login SPA</title>
+  <link rel="stylesheet" href="assets/login.css">
+  <script defer src="assets/login.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="tabs">
+      <div class="tab" data-tab="login">Login</div>
+      <div class="tab" data-tab="cadastro">Cadastro</div>
+      <div class="tab" data-tab="esqueceu">Esqueceu a Senha</div>
+    </div>
+
+    <!-- Login -->
+    <form id="login" class="tab-content">
+      <label for="login-email">Email</label>
+      <input type="email" id="login-email" placeholder="seu@email.com" required />
+      <label for="login-password">Senha</label>
+      <input type="password" id="login-password" placeholder="Senha" required />
+      <button type="submit">Entrar</button>
+    </form>
+
+    <!-- Cadastro -->
+    <form id="cadastro" class="tab-content">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" placeholder="Seu nome" required />
+      <label for="cad-email">Email</label>
+      <input type="email" id="cad-email" placeholder="seu@email.com" required />
+      <label for="cad-password">Senha</label>
+      <input type="password" id="cad-password" placeholder="Crie uma senha" required />
+      <label for="cad-confirm">Confirmar Senha</label>
+      <input type="password" id="cad-confirm" placeholder="Repita a senha" required />
+      <button type="submit">Cadastrar</button>
+    </form>
+
+    <!-- Esqueceu a senha -->
+    <form id="esqueceu" class="tab-content">
+      <label for="rec-email">Digite seu email</label>
+      <input type="email" id="rec-email" placeholder="seu@email.com" required />
+      <button type="submit">Recuperar Senha</button>
+    </form>
+  </div>
+
+  
+</body>
+</html>

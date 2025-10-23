@@ -1,0 +1,86 @@
+CREATE DATABASE livraria_db;
+USE livraria_db;
+
+-- Usuários (Admin)
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100),
+    email VARCHAR(150) UNIQUE,
+    senha VARCHAR(255)
+);
+
+-- Produtos (Livros)
+CREATE TABLE produtos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(255) NOT NULL,
+    descricao TEXT,
+    preco DECIMAL(10,2) NOT NULL,
+    imagem VARCHAR(255),livraria_db
+    categoria VARCHAR(100),
+    estoque INT DEFAULT 0,
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+-- Criação da tabela de banners para o carrossel
+CREATE TABLE IF NOT EXISTS banners (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    imagem VARCHAR(255) NOT NULL,
+    titulo VARCHAR(100) NOT NULL,
+    link VARCHAR(255) DEFAULT NULL
+);
+
+-- Criação da tabela de destaques para a seção de destaque
+CREATE TABLE IF NOT EXISTS destaques (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    imagem VARCHAR(255) NOT NULL,
+    titulo VARCHAR(100) NOT NULL,
+    descricao TEXT,
+    link VARCHAR(255) DEFAULT NULL
+);
+
+
+
+
+INSERT INTO usuarios (nome, email, senha)
+VALUES ('Administrador', 'admin@site.com', MD5('12345'));
+
+CREATE TABLE pedidos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    usuario_id INT,
+    nome_cliente VARCHAR(100),
+    email_cliente VARCHAR(150),
+    telefone_cliente VARCHAR(20),
+    endereco_entrega VARCHAR(255),
+    valor_total DECIMAL(10,2),
+    status ENUM('Pendente','Pago','Enviado','Cancelado') DEFAULT 'Pendente',
+    data_pedido TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
+);
+
+CREATE TABLE itens_pedido (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    pedido_id INT,
+    produto_id INT,
+    quantidade INT DEFAULT 1,
+    preco_unitario DECIMAL(10,2),
+    FOREIGN KEY (pedido_id) REFERENCES pedidos(id),
+    FOREIGN KEY (produto_id) REFERENCES produtos(id)
+);
+
+CREATE TABLE categorias (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL
+);
+
+ALTER TABLE produtos ADD categoria_id INT;
+ALTER TABLE produtos ADD FOREIGN KEY (categoria_id) REFERENCES categorias(id);
+
+INSERT INTO categorias (nome) VALUES
+('Romance'), ('Tecnologia'), ('Aventura'), ('Fantasia'), ('Educação');
+
+
+
+
+
+BANCO DE DADOS EDITORA ARAME FARPADO.

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editora Arame Farpado</title>
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header class="navbar" id="inicio">
+    <div class="topo-preto">
+      <div class="logo">
+        <img src="imagens/ssaraiva.png" alt="Logo" />
+        <span><strong>Editora</strong><br />Arame Farpado</span>
+      </div>
+      <div class="login-area">
+        <i class="fas fa-user"></i>
+        <div class="login-texto">
+            <span class="usuario">Arame farpado 💀</span><br>
+            <a href="login.html">Entre</a> ou <a href="login.html"><strong>cadastre-se</strong></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-vermelho">
+  <button class="hamburguer" id="btnMenu">
+  <i class="fas fa-bars"></i>
+</button>
+
+
+      <nav>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#">Loja</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Antologias</a></li>
+          <li><a href="#">Manifesto incógnito</a></li>
+          <li><a href="#">Serviços</a></li>
+        </ul>
+      </nav>
+      <div class="busca">
+        <input type="text" placeholder="Buscar..." />
+        <i class="fas fa-search lupa"></i>
+      </div>
+    </div>
+  </header>
+
+<section class="carrossel">
+  <div class="carrossel-wrapper" id="carrosselWrapper">
+    <div class="carrossel-slide">
+      <picture>
+        <source media="(max-width: 768px)" srcset="imagens/b.webp">
+        <img src="imagens/banner1.webp" alt="Slide 1">
+      </picture>
+    </div>
+
+    <div class="carrossel-slide">
+      <picture>
+        <source media="(max-width: 768px)" srcset="imagens/b.webp">
+        <img src="imagens/banner2.webp" alt="Slide 2">
+      </picture>
+    </div>
+
+    <div class="carrossel-slide">
+      <picture>
+        <source media="(max-width: 768px)" srcset="imagens/b.webp">
+        <img src="imagens/banner3.webp" alt="Slide 3">
+      </picture>
+    </div>
+  </div>
+
+  <div class="setas">
+    <span class="seta" id="prev">&#10094;</span>
+    <span class="seta" id="next">&#10095;</span>
+  </div>
+
+  <div class="bolinhas" id="bolinhas"></div>
+</section>
+
+
+
+<section class="secao-lancamentos">
+  <h2>Lançamentos</h2>
+  <div class="lancamentos-carousel">
+    <button class="lancamentos-seta lancamentos-seta-anterior" aria-label="Anterior">&#10094;</button>
+
+    <div class="lancamentos-carousel-viewport">
+      <div class="lancamentos-carousel-track">
+        <div class="lancamento-item"><img src="imagens/capa.webp" alt="Livro 1"></div>
+        <div class="lancamento-item"><img src="imagens/capa.webp" alt="Livro 2"></div>
+        <div class="lancamento-item"><img src="imagens/capa.webp" alt="Livro 3"></div>
+        <div class="lancamento-item"><img src="imagens/capa.webp" alt="Livro 4"></div>
+        <div class="lancamento-item"><img src="imagens/capa.webp" alt="Livro 5"></div>
+      </div>
+    </div>
+
+    <button class="lancamentos-seta lancamentos-seta-proximo" aria-label="Próximo">&#10095;</button>
+
+    <!-- Bolinhas indicadoras dentro do carrossel -->
+    <div class="lancamentos-dots" aria-label="Indicadores do carrossel"></div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<section class="destaque">
+  <div class="container-destaque">
+    
+    <div class="destaque-esquerda">
+      <img src="imagens/Destaque.webp" alt="Imagem grande" />
+      <h2><span class="vermelho">Destaques da semana</span> – olhe as principais mudanças </h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    </div>
+
+    <!-- LINHA DIVISORA ADICIONADA -->
+    <div class="linha-divisora"></div>
+
+    <div class="destaque-direita">
+      <div class="bloco">
+        <img src="imagens/Destaquezin.webp" alt="Miniatura 1" />
+        <h3><span class="vermelho">TÍTULO</span> – TEXTO TEXTO TEXTO</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+      </div>
+      <div class="bloco">
+        <img src="imagens/Destaquezin.webp" alt="Miniatura 2" />
+        <h3><span class="vermelho">TÍTULO</span> – TEXTO TEXTO TEXTO</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+      </div>
+      <div class="bloco">
+        <img src="imagens/Destaquezin.webp" alt="Miniatura 3" />
+        <h3><span class="vermelho">TÍTULO</span> – TEXTO TEXTO TEXTO</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+      </div>
+      <div class="bloco">
+        <img src="imagens/Destaquezin.webp" alt="Miniatura 4" />
+        <h3><span class="vermelho">TÍTULO</span> – TEXTO TEXTO TEXTO</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur...</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="catalogo" class="section catalogo">
+  <div class="container-catalogo">
+    <div class="part-red">
+  <h3>Fique por dentro<br>das novidades</h3>
+  <p>
+    Descubra novas histórias incríveis, promoções especiais e lançamentos exclusivos
+    que vão transformar suas leituras.
+  </p>
+</div>
+
+
+        <div class="area-livros">
+        <h2>Catálogo</h2>
+        <div class="livros">
+          <!-- Cards de livros -->
+          <div class="livro">
+          
+            <img src="imagens/capa.webp" alt="Livro 1" />
+            <h3>O Canto das Estrelas</h3>
+            <p>Uma emocionante narrativa que explora a magia do universo.</p>
+            <p class="preco">R$ 49,90</p>
+            <button class="btn-comprar">Adicionar ao carrinho</button>
+          </div>
+
+          <div class="livro">
+            <img src="imagens/capa.webp" alt="Livro 2" />
+            <h3>Raízes do Brasil</h3>
+            <p>Descubra as origens e a cultura brasileira.</p>
+            <p class="preco">R$ 59,90</p>
+            <button class="btn-comprar">Adicionar ao carrinho</button>
+          </div>
+
+          <div class="livro">
+            <img src="imagens/capa.webp" alt="Livro 3" />
+            <h3>Entre Mundos</h3>
+            <p>Romance envolvente entre fantasia e realidade.</p>
+            <p class="preco">R$ 39,90</p>
+            <button class="btn-comprar">Adicionar ao carrinho</button>
+          </div>
+
+          <div class="livro">
+            <img src="imagens/capa.webp" alt="Livro 4" />
+            <h3>Memórias de um Viajante</h3>
+            <p>Histórias inspiradoras de aventuras pelo mundo.</p>
+            <p class="preco">R$ 44,90</p>
+            <button class="btn-comprar">Adicionar ao carrinho</button>
+          </div>
+
+          <div class="livro">
+            <img src="imagens/capa.webp" alt="Livro 5" />
+            <h3>O Canto das Estrelas</h3>
+            <p>Uma emocionante narrativa que explora a magia do universo.</p>
+            <p class="preco">R$ 49,90</p>
+            <button class="btn-comprar">Adicionar ao carrinho</button>
+          </div>
+
+          <div class="livro">
+            <img src="imagens/capa.webp" alt="Livro 6" />
+            <h3>Raízes do Brasil</h3>
+            <p>Descubra as origens e a cultura brasileira.</p>
+            <p class="preco">R$ 59,90</p>
+            <button class="btn-comprar">Adicionar ao carrinho</button>
+          </div>
+
+          <div class="livro">
+            <img src="imagens/capa.webp" alt="Livro 7" />
+            <h3>Entre Mundos</h3>
+            <p>Romance envolvente entre fantasia e realidade.</p>
+            <p class="preco">R$ 39,90</p>
+            <button class="btn-comprar">Adicionar ao carrinho</button>
+          </div>
+
+          <div class="livro">
+            <img src="imagens/capa.webp" alt="Livro 8" />
+            <h3>Memórias de um Viajante</h3>
+            <p>Histórias inspiradoras de aventuras pelo mundo.</p>
+            <p class="preco">R$ 44,90</p>
+            <button class="btn-comprar">Adicionar ao carrinho</button>
+          </div>
+
+           
+        </div>
+      </div>
+    </div>
+      <div id="paginacao" class="paginacao"></div>
+</section>
+
+
+<footer class="rodape">
+  <div class="container-rodape">
+
+    <div class="coluna-rodape">
+      <h2 class="logoRoda">ARAME FARPADO</h2>
+      <p>Inspire-se com as melhores histórias. Conheça nosso catálogo e mergulhe na leitura!</p>
+    </div>
+
+    <div class="coluna-rodape">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#catalogo">Loja</a></li>
+        <li><a href="#contato">Blog</a></li>
+        <li><a href="#novidades">Antologias</a></li>
+        <li><a href="#novidades">Manifesto</a></li>
+        <li><a href="#novidades">Serviços</a></li>
+      </ul>
+    </div>
+
+    <div class="coluna-rodape">
+      <h3>Contato</h3>
+      <p>Email: contato@ArameFarpado.com</p>
+      <p>WhatsApp: (11) 99999-9999</p>
+    </div>
+
+    <div class="coluna-rodape">
+      <h3>Siga-nos</h3>
+      <div class="redes-sociais">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="copy">
+    <p>&copy; 2025 Arame Farpado. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+
+
+
+</body>
+<script src="assets/script.js"></script>
+</html>

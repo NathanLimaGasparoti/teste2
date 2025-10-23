@@ -1,0 +1,42 @@
+carrousel imagens:
+Desktop: 1920x600 ou 1920x500 px
+Mobile: 1080x1350
+Parte das imagens de lançamentos de livros e catálogo:
+160x250 px
+
+Parte dos cards destaques:
+Imagem da esquerda(grande): 800x450 px;
+Imagem da direita(miniaturas): 120x160 px
+
+Tamnaho da Logo:
+200x100(png)
+
+Tamanho da imagem acima do catálogo:
+400-500px de largura por ~300px de altura
+
+
+Tamanho imagem produto:
+1000px x 1000px
+
+
+🟥 Destaque Grande (esquerda)
+
+Tamanho recomendado:
+📏 Largura: 700px
+📐 Altura: 400px
+
+Proporção: 16:9
+(igual a uma imagem de capa, tipo banner horizontal)
+
+💡 Se quiser mais qualidade em telas grandes, pode usar 1400x800 px — o navegador vai redimensionar sem problema.
+
+
+⬜ Destaques Pequenos (direita)
+
+Tamanho recomendado por imagem:
+📏 Largura: 320px
+📐 Altura: 180px
+
+Proporção: 16:9 também (para manter harmonia com o destaque grande).
+
+💡 Essas imagens aparecem em blocos menores, tipo cards, então não precisam de tanta resolução.
